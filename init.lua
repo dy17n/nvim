@@ -12,4 +12,6 @@ vim.cmd 'set number'
 vim.cmd 'set cursorline'
 vim.cmd 'set signcolumn=yes'
 vim.opt.fillchars = { eob = " "}
+vim.diagnostic.config({ virtual_text = false })
+
 require'lspconfig'.hls.setup{}
