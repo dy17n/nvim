@@ -10,4 +10,6 @@ vim.cmd 'set shiftwidth=2'
 vim.cmd 'set tabstop=2'
 vim.cmd 'set number'
 vim.cmd 'set cursorline'
-
+vim.cmd 'set signcolumn=yes'
+vim.opt.fillchars = { eob = " "}
+require'lspconfig'.hls.setup{}
